@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/furniture-icon.png" />
+    <link rel="apple-touch-icon" href="img/furniture-icon.png" />
+    <title>Mobileri</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div class="container">
+          <div class="nav-container">
+            <span class="logo">Zenith</span>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#why-us">About Us</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+          <div class="swiper-content">
+            <h1>Shtëpi që Ndjehet</h1>
+            <p>
+              Mobiliet tona sjellin ndjesinë e ngrohtësisë që e bën shtëpinë të
+              ndihet si shtëpi.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slide-2">
+          <div class="swiper-content">
+            <h1>Qetësi dhe Cilësi</h1>
+            <p>
+              Dizajnojmë me kujdes për të sjellë qetësi dhe cilësi në çdo
+              hapësirë.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slide-3">
+          <div class="swiper-content">
+            <h1>Dizajn që Frymëzon</h1>
+            <p>
+              Çdo detaj është menduar për të frymëzuar jetë dhe stil në
+              ambientin tuaj.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slide-4">
+          <div class="swiper-content">
+            <h1>Bukuri Dhe Rehati</h1>
+            <p>Dizajnuar per jeten. Ndertuar per te zgjatur</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add pagination element -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next"></div>
+    </div>
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome-zenith" id="welcome-zenith">
+      <div class="overlay">
+        <div class="container welcome-content">
+          <div class="welcome-text">
+            <h1 class="zenith-title animate-on-scroll">Zenith</h1>
+            <p class="animate-on-scroll">
+              Te Zenith Furniture besojmë se çdo hapësirë meriton mobilje që
+              kombinojnë rehati, stil dhe cilësi. Me dizajne bashkëkohore dhe
+              përkushtim në detaj, ne ju ndihmojmë të krijoni një ambient që e
+              doni.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why-us" class="why-us-section">
+      <div class="container">
+        <div class="content-grid">
+          <div class="title-container">
+            <h2>Pse të Zgjidhni <span class="accent">Zenith</span></h2>
+          </div>
+          <div class="text-container">
+            <h3>
+              Mobilje që nuk janë thjesht pjesë e një ambienti, por vetë
+              karakteri i tij. Nga ideja tek realizimi, ne ndërtojmë me pasion
+              dhe kujdes.
+            </h3>
+            <div class="list-container">
+              <h4>Punojmë me përkushtim për:</h4>
+              <ul>
+                <li>
+                  <span class="bullet">•</span> Hotele që kërkojnë elegancë
+                </li>
+                <li>
+                  <span class="bullet">•</span> Kuzhina që bashkojnë familjen
+                </li>
+                <li>
+                  <span class="bullet">•</span> Dhoma që qetësojnë shpirtin
+                </li>
+                <li>
+                  <span class="bullet">•</span> Dhe hapësira që flasin për ju
+                </li>
+              </ul>
+            </div>
+            <p>
+              Me dizajn të kujdesshëm dhe cilësi të padiskutueshme, çdo copë
+              merr jetë për të reflektuar vizionin tuaj.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title">Some of our work</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all">
+            Të gjitha
+          </button>
+          <button class="filter-btn" data-category="kuzhina">Kuzhina</button>
+          <button class="filter-btn" data-category="dhoma">Dhoma Gjumi</button>
+          <button class="filter-btn" data-category="sallon">Sallon</button>
+          <button class="filter-btn" data-category="kauqa">
+            Kauqa & Fotele
+          </button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery">
+          <!-- JS will render images here -->
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">×</button>
+        <button class="lightbox-prev" id="lightboxPrev">❮</button>
+        <div class="lightboxImage-Caption">
+          <img id="lightboxImg" alt="Gallery Image" />
+          <div id="lightboxCaption"></div>
+        </div>
+        <button class="lightbox-next" id="lightboxNext">❯</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact-section">
+      <div class="contact-overlay">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-text">
+              <h2 class="animate-on-scroll">Let’s Craft Your Dream Space</h2>
+              <p class="animate-on-scroll">
+                Whether it’s a cozy home, a luxurious hotel, or a custom
+                furniture piece, Zenith Furniture is here to bring your vision
+                to life. Share your project details, and our team will get in
+                touch to discuss how we can create something extraordinary
+                together.
+              </p>
+            </div>
+            <div class="contact-form-card animate-on-scroll">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/your-form-id"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone (Optional)</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Your Phone Number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="project-type">Project Type</label>
+                  <select id="project-type" name="project-type" required>
+                    <option value="" disabled selected>
+                      Select Project Type
+                    </option>
+                    <option value="kuzhina">Kitchen</option>
+                    <option value="dhoma">Bedroom</option>
+                    <option value="sallon">Living Room</option>
+                    <option value="kauqa">Sofas & Armchairs</option>
+                    <option value="hotel">Hotel/Commercial</option>
+                    <option value="custom">Custom Furniture</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Project Details</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Tell us about your project..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary">
+                  Start Your Project
+                </button>
+                <p class="form-message" id="form-message"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-elements">
+          <div class="footer-logo"><span class="logo">Zenith</span></div>
+          <div class="footer-links">
+            <ul>
+              <li>
+                <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+              </li>
+              <li>
+                <a href="#why-us"
+                  ><i class="fa-solid fa-circle-info"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="#projects"
+                  ><i class="fa-solid fa-briefcase"></i> Projects</a
+                >
+              </li>
+              <li>
+                <a href="#contact-us"
+                  ><i class="fa-solid fa-envelope"></i> Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social-icons">
+            <a
+              href=" https://www.facebook.com/profile.php?id=61579388045888"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mobileriazenithh/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="mailto:mobileriazenith@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Zenith Furniture. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+/* EXTRA LARGE DEVICES: 1024px and above */
+@media (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* LARGE DEVICES: 993px to 1023px */
+@media (min-width: 993px) {
+  /* Swiper h1 and p */
+  .swiper-content h1 {
+    font-size: 48px;
+    letter-spacing: 20px;
+    margin-bottom: 24px;
+  }
+
+  .swiper-content p {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  /* Swiper arrows */
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* MEDIUM DEVICES: 769px to 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  .swiper-content h1 {
+    font-size: 40px;
+    letter-spacing: 12px;
+    margin-bottom: 20px;
+  }
+
+  .swiper-content p {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  /* Why Us Section */
+  .why-us-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .why-us-title {
+    font-size: 36px;
+    margin-left: 0;
+    text-align: left;
+    letter-spacing: 1.5px;
+  }
+
+  .why-us-title::after {
+    left: 0;
+    transform: none;
+    width: 180px;
+  }
+
+  .why-us-content-right {
+    width: 100%;
+  }
+
+  .why-us-content-right h3 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .why-us-content-right h4 {
+    font-size: 22px;
+  }
+
+  .why-us-content-right li {
+    font-size: 18px;
+  }
+
+  .why-us-content-right p {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* LARGE TABLETS & DESKTOP: 768px to 992px */
+@media (min-width: 768px) {
+  /* Footer default desktop layout */
+  .footer-elements {
+    flex-direction: row;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .footer-links ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .footer-links ul li a {
+    justify-content: flex-start;
+  }
+
+  .footer-social-icons {
+    justify-content: flex-end;
+  }
+
+  .title-container h2 {
+    font-size: 3.125rem;
+  }
+
+  .text-container h3 {
+    font-size: 1.75rem;
+  }
+}
+
+/* SMALL DEVICES: 577px to 768px */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-container {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    right: 0;
+    background-color: var(--primary);
+    padding: 20px;
+    gap: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    height: calc(100vh - 115px);
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 30px;
+    padding-top: 40px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    padding: 45px 0;
+    display: block;
+    width: 100%;
+    color: white;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-text {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .contact-text p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Swiper h1 and p */
+  .swiper-content h1 {
+    font-size: 32px;
+    letter-spacing: 8px;
+    margin-bottom: 18px;
+  }
+
+  .swiper-content p {
+    font-size: 16px;
+    letter-spacing: 2.5px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+/* MOBILE DEVICES: up to 576px */
+@media (max-width: 576px) {
+  .swiper-content h1 {
+    font-size: 30px;
+    display: inline-block;
+    letter-spacing: 6px;
+    margin-bottom: 16px;
+  }
+
+  .swiper-content p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .footer-elements {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 26px;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .footer-links ul li a {
+    justify-content: center;
+  }
+
+  .footer-social-icons {
+    gap: 20px;
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
